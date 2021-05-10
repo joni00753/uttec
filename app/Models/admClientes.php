@@ -1,0 +1,160 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property int $CIDCLIENTEPROVEEDOR
+ * @property string $CCODIGOCLIENTE
+ * @property string $CRAZONSOCIAL
+ * @property string $CFECHAALTA
+ * @property string $CRFC
+ * @property string $CCURP
+ * @property string $CDENCOMERCIAL
+ * @property string $CREPLEGAL
+ * @property int $CIDMONEDA
+ * @property int $CLISTAPRECIOCLIENTE
+ * @property float $CDESCUENTODOCTO
+ * @property float $CDESCUENTOMOVTO
+ * @property int $CBANVENTACREDITO
+ * @property int $CIDVALORCLASIFCLIENTE1
+ * @property int $CIDVALORCLASIFCLIENTE2
+ * @property int $CIDVALORCLASIFCLIENTE3
+ * @property int $CIDVALORCLASIFCLIENTE4
+ * @property int $CIDVALORCLASIFCLIENTE5
+ * @property int $CIDVALORCLASIFCLIENTE6
+ * @property int $CTIPOCLIENTE
+ * @property int $CESTATUS
+ * @property string $CFECHABAJA
+ * @property string $CFECHAULTIMAREVISION
+ * @property float $CLIMITECREDITOCLIENTE
+ * @property int $CDIASCREDITOCLIENTE
+ * @property int $CBANEXCEDERCREDITO
+ * @property float $CDESCUENTOPRONTOPAGO
+ * @property int $CDIASPRONTOPAGO
+ * @property float $CINTERESMORATORIO
+ * @property int $CDIAPAGO
+ * @property int $CDIASREVISION
+ * @property string $CMENSAJERIA
+ * @property string $CCUENTAMENSAJERIA
+ * @property int $CDIASEMBARQUECLIENTE
+ * @property int $CIDALMACEN
+ * @property int $CIDAGENTEVENTA
+ * @property int $CIDAGENTECOBRO
+ * @property int $CRESTRICCIONAGENTE
+ * @property float $CIMPUESTO1
+ * @property float $CIMPUESTO2
+ * @property float $CIMPUESTO3
+ * @property float $CRETENCIONCLIENTE1
+ * @property float $CRETENCIONCLIENTE2
+ * @property int $CIDVALORCLASIFPROVEEDOR1
+ * @property int $CIDVALORCLASIFPROVEEDOR2
+ * @property int $CIDVALORCLASIFPROVEEDOR3
+ * @property int $CIDVALORCLASIFPROVEEDOR4
+ * @property int $CIDVALORCLASIFPROVEEDOR5
+ * @property int $CIDVALORCLASIFPROVEEDOR6
+ * @property float $CLIMITECREDITOPROVEEDOR
+ * @property int $CDIASCREDITOPROVEEDOR
+ * @property int $CTIEMPOENTREGA
+ * @property int $CDIASEMBARQUEPROVEEDOR
+ * @property float $CIMPUESTOPROVEEDOR1
+ * @property float $CIMPUESTOPROVEEDOR2
+ * @property float $CIMPUESTOPROVEEDOR3
+ * @property float $CRETENCIONPROVEEDOR1
+ * @property float $CRETENCIONPROVEEDOR2
+ * @property int $CBANINTERESMORATORIO
+ * @property float $CCOMVENTAEXCEPCLIENTE
+ * @property float $CCOMCOBROEXCEPCLIENTE
+ * @property int $CBANPRODUCTOCONSIGNACION
+ * @property string $CSEGCONTCLIENTE1
+ * @property string $CSEGCONTCLIENTE2
+ * @property string $CSEGCONTCLIENTE3
+ * @property string $CSEGCONTCLIENTE4
+ * @property string $CSEGCONTCLIENTE5
+ * @property string $CSEGCONTCLIENTE6
+ * @property string $CSEGCONTCLIENTE7
+ * @property string $CSEGCONTPROVEEDOR1
+ * @property string $CSEGCONTPROVEEDOR2
+ * @property string $CSEGCONTPROVEEDOR3
+ * @property string $CSEGCONTPROVEEDOR4
+ * @property string $CSEGCONTPROVEEDOR5
+ * @property string $CSEGCONTPROVEEDOR6
+ * @property string $CSEGCONTPROVEEDOR7
+ * @property string $CTEXTOEXTRA1
+ * @property string $CTEXTOEXTRA2
+ * @property string $CTEXTOEXTRA3
+ * @property string $CFECHAEXTRA
+ * @property float $CIMPORTEEXTRA1
+ * @property float $CIMPORTEEXTRA2
+ * @property float $CIMPORTEEXTRA3
+ * @property float $CIMPORTEEXTRA4
+ * @property int $CBANDOMICILIO
+ * @property int $CBANCREDITOYCOBRANZA
+ * @property int $CBANENVIO
+ * @property int $CBANAGENTE
+ * @property int $CBANIMPUESTO
+ * @property int $CBANPRECIO
+ * @property string $CTIMESTAMP
+ * @property int $CFACTERC01
+ * @property float $CCOMVENTA
+ * @property float $CCOMCOBRO
+ * @property int $CIDMONEDA2
+ * @property string $CEMAIL1
+ * @property string $CEMAIL2
+ * @property string $CEMAIL3
+ * @property int $CTIPOENTRE
+ * @property int $CCONCTEEMA
+ * @property int $CFTOADDEND
+ * @property int $CIDCERTCTE
+ * @property int $CENCRIPENT
+ * @property int $CBANCFD
+ * @property string $CTEXTOEXTRA4
+ * @property string $CTEXTOEXTRA5
+ * @property float $CIMPORTEEXTRA5
+ * @property int $CIDADDENDA
+ * @property string $CCODPROVCO
+ * @property int $CENVACUSE
+ * @property string $CCON1NOM
+ * @property string $CCON1TEL
+ * @property int $CQUITABLAN
+ * @property int $CFMTOENTRE
+ * @property int $CIDCOMPLEM
+ * @property int $CDESGLOSAI2
+ * @property int $CLIMDOCTOS
+ * @property string $CSITIOFTP
+ * @property string $CUSRFTP
+ * @property string $CMETODOPAG
+ * @property string $CNUMCTAPAG
+ * @property int $CIDCUENTA
+ * @property string $CUSOCFDI
+ */
+class admClientes extends Model
+{
+    /**
+     * The table associated with the model.
+     * 
+     * @var string
+     */
+    protected $table = 'admClientes';
+
+    /**
+     * The primary key for the model.
+     * 
+     * @var string
+     */
+    protected $primaryKey = 'CIDCLIENTEPROVEEDOR';
+
+    /**
+     * Indicates if the IDs are auto-incrementing.
+     * 
+     * @var bool
+     */
+    public $incrementing = false;
+
+    /**
+     * @var array
+     */
+    protected $fillable = ['CCODIGOCLIENTE', 'CRAZONSOCIAL', 'CFECHAALTA', 'CRFC', 'CCURP', 'CDENCOMERCIAL', 'CREPLEGAL', 'CIDMONEDA', 'CLISTAPRECIOCLIENTE', 'CDESCUENTODOCTO', 'CDESCUENTOMOVTO', 'CBANVENTACREDITO', 'CIDVALORCLASIFCLIENTE1', 'CIDVALORCLASIFCLIENTE2', 'CIDVALORCLASIFCLIENTE3', 'CIDVALORCLASIFCLIENTE4', 'CIDVALORCLASIFCLIENTE5', 'CIDVALORCLASIFCLIENTE6', 'CTIPOCLIENTE', 'CESTATUS', 'CFECHABAJA', 'CFECHAULTIMAREVISION', 'CLIMITECREDITOCLIENTE', 'CDIASCREDITOCLIENTE', 'CBANEXCEDERCREDITO', 'CDESCUENTOPRONTOPAGO', 'CDIASPRONTOPAGO', 'CINTERESMORATORIO', 'CDIAPAGO', 'CDIASREVISION', 'CMENSAJERIA', 'CCUENTAMENSAJERIA', 'CDIASEMBARQUECLIENTE', 'CIDALMACEN', 'CIDAGENTEVENTA', 'CIDAGENTECOBRO', 'CRESTRICCIONAGENTE', 'CIMPUESTO1', 'CIMPUESTO2', 'CIMPUESTO3', 'CRETENCIONCLIENTE1', 'CRETENCIONCLIENTE2', 'CIDVALORCLASIFPROVEEDOR1', 'CIDVALORCLASIFPROVEEDOR2', 'CIDVALORCLASIFPROVEEDOR3', 'CIDVALORCLASIFPROVEEDOR4', 'CIDVALORCLASIFPROVEEDOR5', 'CIDVALORCLASIFPROVEEDOR6', 'CLIMITECREDITOPROVEEDOR', 'CDIASCREDITOPROVEEDOR', 'CTIEMPOENTREGA', 'CDIASEMBARQUEPROVEEDOR', 'CIMPUESTOPROVEEDOR1', 'CIMPUESTOPROVEEDOR2', 'CIMPUESTOPROVEEDOR3', 'CRETENCIONPROVEEDOR1', 'CRETENCIONPROVEEDOR2', 'CBANINTERESMORATORIO', 'CCOMVENTAEXCEPCLIENTE', 'CCOMCOBROEXCEPCLIENTE', 'CBANPRODUCTOCONSIGNACION', 'CSEGCONTCLIENTE1', 'CSEGCONTCLIENTE2', 'CSEGCONTCLIENTE3', 'CSEGCONTCLIENTE4', 'CSEGCONTCLIENTE5', 'CSEGCONTCLIENTE6', 'CSEGCONTCLIENTE7', 'CSEGCONTPROVEEDOR1', 'CSEGCONTPROVEEDOR2', 'CSEGCONTPROVEEDOR3', 'CSEGCONTPROVEEDOR4', 'CSEGCONTPROVEEDOR5', 'CSEGCONTPROVEEDOR6', 'CSEGCONTPROVEEDOR7', 'CTEXTOEXTRA1', 'CTEXTOEXTRA2', 'CTEXTOEXTRA3', 'CFECHAEXTRA', 'CIMPORTEEXTRA1', 'CIMPORTEEXTRA2', 'CIMPORTEEXTRA3', 'CIMPORTEEXTRA4', 'CBANDOMICILIO', 'CBANCREDITOYCOBRANZA', 'CBANENVIO', 'CBANAGENTE', 'CBANIMPUESTO', 'CBANPRECIO', 'CTIMESTAMP', 'CFACTERC01', 'CCOMVENTA', 'CCOMCOBRO', 'CIDMONEDA2', 'CEMAIL1', 'CEMAIL2', 'CEMAIL3', 'CTIPOENTRE', 'CCONCTEEMA', 'CFTOADDEND', 'CIDCERTCTE', 'CENCRIPENT', 'CBANCFD', 'CTEXTOEXTRA4', 'CTEXTOEXTRA5', 'CIMPORTEEXTRA5', 'CIDADDENDA', 'CCODPROVCO', 'CENVACUSE', 'CCON1NOM', 'CCON1TEL', 'CQUITABLAN', 'CFMTOENTRE', 'CIDCOMPLEM', 'CDESGLOSAI2', 'CLIMDOCTOS', 'CSITIOFTP', 'CUSRFTP', 'CMETODOPAG', 'CNUMCTAPAG', 'CIDCUENTA', 'CUSOCFDI'];
+
+}
